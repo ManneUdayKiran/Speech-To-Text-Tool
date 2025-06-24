@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: parseInt(process.env.PORT) || 5173,
-    allowedHosts: ['https://speech-to-text-tool.onrender.com','https://speech-to-text-tool-backend.onrender.com']
+    allowedHosts: ['speech-to-text-tool.onrender.com','speech-to-text-tool-backend.onrender.com']
 
   }
 });
