@@ -12,7 +12,7 @@ export default function MicRecorder() {
   const [listening, setListening] = useState(false); // triggers Lottie animation
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:3000");
+    const ws = new WebSocket("https://speech-to-text-tool-backend.onrender.com");
     ws.onopen = () => {
       console.log("🔗 Connected to server");
       setSocket(ws);

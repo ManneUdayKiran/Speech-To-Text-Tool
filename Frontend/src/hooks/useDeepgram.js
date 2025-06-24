@@ -10,7 +10,7 @@ export default function useDeepgram() {
   const source = useRef(null);
 
   const connectWebSocket = () => {
-    ws.current = new WebSocket("ws://localhost:3000");
+    ws.current = new WebSocket("https://speech-to-text-tool-backend.onrender.com");
 
     ws.current.onopen = () => console.log("🔗 WebSocket connected to backend");
 
